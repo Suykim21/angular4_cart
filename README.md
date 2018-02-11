@@ -1,26 +1,20 @@
-# Simplecart
+# Simple Responsive Angular 4/5 Shopping Cart
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5 integrated with SASS/SCSS (incorporated with CSS-Flexbox and CSS-Grid).
+
+### Mobile View
+ | Home | Shopping Cart | Empty Cart|
+:---------------:|:--------------:|:------------
+<img src="https://user-images.githubusercontent.com/25072657/36079088-249e5c90-0f34-11e8-9849-d822c4235647.png"> | <img src="https://user-images.githubusercontent.com/25072657/36079087-248342e8-0f34-11e8-8d9a-257b5fd6a875.png" width="150"> |<img src="https://user-images.githubusercontent.com/25072657/36079086-2468b14e-0f34-11e8-91a8-8bc88103964f.png" width="150">
+
+### Desktop View
+ | Home | Shopping Cart | Empty Cart|
+:---------------:|:--------------:|:------------
+<img src="https://user-images.githubusercontent.com/25072657/36079083-1fa5e618-0f34-11e8-9f7c-6b52a6c40a2f.png"> | <img src="https://user-images.githubusercontent.com/25072657/36079081-1d407942-0f34-11e8-83ba-831904d1eaab.png"> |<img src="https://user-images.githubusercontent.com/25072657/36079078-17f41caa-0f34-11e8-9383-81a0ddf4d71f.png" width="150">
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
