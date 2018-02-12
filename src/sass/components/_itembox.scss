@@ -1,0 +1,53 @@
+.itembox {
+  @include flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+ 
+  padding: 1rem;
+  border: 1px solid $color-shadow;
+  border-radius: 5%;
+
+  opacity: 0;
+
+  &__pic {
+    height: 95%;
+    width: 95%;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__cost {
+    font-size: 2rem;
+  }
+
+  &__cta {
+    font-size: 1.5rem;
+    padding: 1rem 2rem; 
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5%;
+    border: 1px solid $color-black;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+            transition: all .2s;
+
+    &:hover {
+      background-color: $color-green;
+      color: $color-white;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+}
+
+.added {
+  background-color: red;
+  color: white;
+}
