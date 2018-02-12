@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
       if (cur === product) {
         // console.log(this.cart.includes(cur));
         this.cart.push(product);
-        console.log(this.cart.includes(cur));
+        // console.log(this.cart.includes(cur));
         this.total += cur.price;
         this.added = true;
         this.updateCartCount();

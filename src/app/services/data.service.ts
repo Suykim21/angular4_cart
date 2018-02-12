@@ -27,10 +27,6 @@ export class DataService {
     return this._http.get<Product[]>(this.productsUrl);
   }
 
-  saveProduct(product: Product): Observable<Product> {
-    return this._http.post<Product>(this.productsUrl, product, httpOptions);
-  }
-
   updateCartCount(message:string) {
     this.cart_counter++;
     // console.log(this.cart_counter);
