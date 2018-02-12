@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  background-color: $color-white;
+
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-black;
+
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+hr {
+  border-color: $color-black;
+  margin: 4rem 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 2rem 3rem;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-align: center;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  max-width: 120rem;
+  margin: 3rem auto;
+  background-color: $color-white;
+
+  @include respond(tab-land) {
+    margin: 3rem;
+  }
+}

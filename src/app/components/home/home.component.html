@@ -1,0 +1,47 @@
+<h1 class="title">Shop our featured collection</h1>
+<div class="container">
+  
+    <div *ngFor="let product of products; let i=index;" class="itembox">
+      <img src="../../../assets/img/{{ product.filename }}" alt="{{ product.id }}" class="itembox__pic">
+      <p class="itembox__title">{{ product.name }}</p>
+      <p class="itembox__cost">{{ product.price | currency }}</p>
+
+      <button class="itembox__cta" (click)="addItem(product)" *ngIf="cart.includes(product) == false">Add to cart</button>
+      <button class="itembox__cta" (click)="deleteItem(product)" *ngIf="cart.includes(product) == true">Remove from cart</button>
+    </div>
+
+</div>
+
+<div class="popup" id="popup">
+  <div class="popup__content">
+    <h1 class="popup__title">Your Cart</h1>
+    <div *ngIf="!added">
+      <h2>It's lonely in here. Please start shopping!</h2>
+    </div>
+    <div *ngIf="added">
+      <ul class="popup__list" *ngFor="let product of cart">
+        <li class="popup__item">
+          <img src="../../../assets/img/{{ product.filename }}" alt="{{ product.name }}" class="popup__item--pic">
+        </li>
+        <li class="popup__item">
+          <div class="popup__details">
+            <p class="popup__details--title"> {{ product.name }}
+              <span (click)="deleteItem(product)">&#10006;</span>
+            </p>
+            <p class="popup__details--price">{{ product.price | currency }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <hr>
+    <div class="popup__total">
+      <h2>Total</h2>
+      <h2>{{ total | currency}}</h2>
+    </div>
+
+    <a href="#home" class="popup__back">Back</a>
+  </div>
+
+
+</div>
