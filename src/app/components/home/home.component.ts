@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   public cart = [];
   public total: number = 0;
   public added: boolean = false;
+
   products: Product[];
 
   constructor(private _dataService: DataService) { }
