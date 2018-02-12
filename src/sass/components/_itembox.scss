@@ -43,11 +43,18 @@
     &:focus {
       outline: 0;
     }
+
+    &--delete {
+
+      &:hover {
+        background-color: $color-red;
+        color: $color-white;
+      }
+  
+      &:focus {
+        outline: 0;
+      }
+    }
   }
 
-}
-
-.added {
-  background-color: red;
-  color: white;
 }
