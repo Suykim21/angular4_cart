@@ -7,7 +7,7 @@
       <p class="itembox__cost">{{ product.price | currency }}</p>
 
       <button class="itembox__cta" (click)="addItem(product)" *ngIf="cart.includes(product) == false">Add to cart</button>
-      <button class="itembox__cta" (click)="deleteItem(product)" *ngIf="cart.includes(product) == true">Remove from cart</button>
+      <button class="itembox__cta itembox__cta--delete" (click)="deleteItem(product)" *ngIf="cart.includes(product) == true">Remove from cart</button>
     </div>
 
 </div>
