@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Mobile View
  | Home | Shopping Cart | Empty Cart|
 :---------------:|:--------------:|:------------
-<img src="https://user-images.githubusercontent.com/25072657/36081408-3d33c672-0f53-11e8-8cf1-b13a846fba0c.png"> | <img src="https://user-images.githubusercontent.com/25072657/36081525-f1f01880-0f54-11e8-80b1-9f7220d22aac.png)"> |<img src="https://user-images.githubusercontent.com/25072657/36081524-f1d57cf0-0f54-11e8-85b0-5bd2d9a64f52.png">
+<img src="https://user-images.githubusercontent.com/25072657/36081408-3d33c672-0f53-11e8-8cf1-b13a846fba0c.png"> | <img src="https://user-images.githubusercontent.com/25072657/36081525-f1f01880-0f54-11e8-80b1-9f7220d22aac.png"> |<img src="https://user-images.githubusercontent.com/25072657/36081524-f1d57cf0-0f54-11e8-85b0-5bd2d9a64f52.png">
 
 ### Desktop View
  | Home | Shopping Cart | Empty Cart|
